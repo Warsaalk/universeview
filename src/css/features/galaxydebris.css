@@ -1,0 +1,6 @@
+.uv-galaxy-debris { background: none !important; }
+.uv-galaxy-debris img,
+.uv-galaxy-debris .debrisField { display: none; }
+.uv-galaxy-debris div { color: #fff; line-height: 1; }
+
+.uv-galaxy-expo-debris { float: right; line-height: 1; text-align: left; }

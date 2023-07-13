@@ -1,0 +1,2 @@
+.uv-convert-ogotcha { display: inline-block; height: 26px; width: 26px; background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/action-buttons.png) no-repeat; background-position: 0 0; }
+.uv-convert-ogotcha:hover { background-position: 0 -26px; }

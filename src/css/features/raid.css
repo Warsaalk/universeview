@@ -1,0 +1,3 @@
+.uv-raid-wrapper input { width: 30px; margin-left: 5px; padding: 0; }
+.uv-raid-wrapper a[data-extra-count]::after { content: attr(data-extra-count); display: inline-block; vertical-align: super; font-size: 0.8em; }
+.uv-raid-wrapper a[data-extra-count^="+0"]::after { display: none; }

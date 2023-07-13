@@ -1,0 +1,20 @@
+/* Uv Favourites */
+#UvFav{ background:url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/quicksearch.gif) no-repeat; position: absolute; top: 103px; left: 102px; cursor:pointer; width:27px; height:27px; background-position: -81px 0; }
+#UvFav:hover{ background-position: -81px -27px; }
+
+#UvFavs li span.btn-del { display: none; }
+#UvFavs li:hover span.btn-del { display: block; }
+
+/*#UvFav:after{ content: ''; background:url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/fav.png) no-repeat; display: block; position: absolute; top: 3px; left: 3px; height: 21px; width: 21px; background-position: 0 0; }
+#UvFav:hover:after{ background-position: 0 -21px; }*/
+#UvFavList { position: relative; display: none; width: 150px; text-align: center; max-height: 300px; overflow-y: auto; }
+#UvFavList .close-tooltip { position: absolute; right: -10px; top: -10px; float: none; height: 17px; width: 20px; }
+#UvFavs li { padding: 3px; position: relative; }
+#UvFavs li .uv-btn-fleet { top: 4px; right: 4px; position: absolute; display: none; }
+#UvFavs li:hover { background-color: #2f4656; cursor: pointer; }
+#UvFavs li:hover .uv-btn-fleet { display: block; }
+
+#galaxyContent .cellPosition { position: relative; }
+#galaxyContent .galaxyRow .uv-btn-add { display: none; left: 0; top: 7px; right: auto; }
+#galaxyContent .UvFavSelected .uv-btn-add,
+#galaxyContent .galaxyRow:hover .uv-btn-add { display: block; }

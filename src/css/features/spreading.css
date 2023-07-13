@@ -1,0 +1,61 @@
+/*** Uv Spreading ***/
+
+#uv-s-wrapper { width: 1014px; position: absolute; top: -1000px; left: 50%; margin-left: -507px; z-index: 3; transition: 1s; }
+#uv-s-wrapper.uv-s-active { top: 21px; }
+.no-commander #uv-s-wrapper.uv-s-active { top: 56px; }
+#uv-s-header { padding: 5px 8px; position: relative; }
+#uv-s-header h2 { padding: 8px; font-size: 1.2em; font-weight: bold; display: inline-block; }
+#uv-s-header span.btn-del { right: 10px; top: 10px; left: auto; }
+#uv-s-header,
+#uv-spreading { margin: 0 auto; width: 1000px; padding: 0 4px; position: relative; background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/spreading-middle.gif) repeat-y; }
+#uv-s-footer { width: 1014px; height: 17px; background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/spreading-footer.gif) no-repeat; }
+
+.uv-s-galaxy { background-color: #333; margin: 5px 0 0 1px; position: relative; }
+.uv-s-planet { position: absolute; background-color: #ff0; z-index: 1; }
+.uv-s-planet.uv-s-detail { width: 6px !important; height: 6px !important; border: 1px solid #fff; z-index: 2; transition: 0.2s; }
+#uv-s-info { height: 140px; padding: 10px; margin: 0 1px; background-color: #161C22;  }
+#uv-s-playerbox { overflow-y : auto; width : 495px; height: 140px; float: left; margin-right: 5px; }
+#uv-s-playerbox ul { list-style: none; }
+#uv-s-playerbox li { display: inline-block; background-color: #22313B; border: 1px solid transparent; width: 222px; height: 27px; margin: 3px 10px 3px 0; line-height: 27px; background-color: #212a33; padding-left: 5px; cursor: pointer; color:#FFF; position: relative; }
+#uv-s-playerbox li.selected{ border: 1px solid #ffff00; }
+#uv-s-playerbox li .del{ background:url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/buttons-all.png) -208px -18px no-repeat; width:15px; height:15px; display: none; position: absolute; top: 6px; right: 60px; }
+#uv-s-playerbox li:hover .del,
+#uv-s-playerbox li.selected .del { display: block; }
+#uv-s-playerbox li .uv-s-playercolor{ width: 50px; height: 17px; position: absolute; right: 4px; top: 4px; border-radius: 2px; border: 0; }
+#uv-s-add-wrapper { margin-left: 510px; cursor: pointer; position: absolute; top: 8px; padding-left: 24px; }
+#uv-s-add-wrapper .uv-btn-add { left: 0; right: auto; }
+
+#uv-s-info .uv-s-header-box { }
+
+#uv-spreading #uv-s-profile { padding: 5px; color: #ddddff; visibility: visible; float: right; }
+
+#uv-s-rows { list-style: none; padding: 0; margin: 0; }
+#uv-s-rows li { background: #161C22; }
+
+#uv-s-planetbox { float: left; width: 231px; height: 140px; padding: 0 10px; overflow-y: auto; border-left: 1px solid #22313b; }
+#uv-s-planetbox li { display: inline-block; width: 90px; height: 20px; margin: 4px 4px 0 4px; line-height: 20px; background-color: #212a33; padding: 2px 2px 2px 5px; cursor:pointer; color:#FFF; }
+#uv-s-playerbox li:hover, 
+#uv-s-planetbox li:hover{ background-color: #364452; }
+#uv-s-config { height: 140px; width: 200px; padding: 0 10px; color: #FFF; float: right; border-left: 1px solid #22313b; }
+#uv-s-config > h2{ margin: 0; font-size: 14px; font-weight: bold; }
+#uv-s-config > div{ margin-top: 10px; line-height: 27px; }
+#uv-s-config input{ max-width: 95px; }
+#uv-s-newprofile { width: 80px; margin-right: 10px; }
+
+#uv_s_profile { float: right; visibility: visible; height: 21px; font-weight: bold; color: #EEE; border-width: 0; cursor: pointer; }
+#uv_s_g_profile { line-height: 21px; padding-left: 10px; }
+.uv_s_profile_wrapper { background-position: 0 -2px; border: solid #000; border-width: 0 2px; color: #ccd3cf; font-size: 11px; height: 24px; padding-top: 3px; width: 650px; margin: 0 auto; }
+
+#uv_s_profile.-legacy { height: 27px; border-width: 1px; }
+#uv_s_g_profile.-legacy { position: absolute; top: 28px; right: 1px; width: 230px; line-height: 27px; padding-left: 0; }
+
+
+#uv-s-options { position: relative; height: 33px; margin-top: 10px; line-height: 33px; padding: 0 10px; font-weight: bold; clear: both; }
+#uv-s-options #uv-s-position-tracker { padding: 0 10px; width: 130px; background: #161C22; }
+#uv-s-options #uv-s-row-color { border: 0; border-radius: 3px; margin-left: 5px; padding: 6px; font-weight: bold; }
+#uv-s-options .uv-s-left { float: left; }
+#uv-s-options .uv-s-right { float: right; }
+#uv-s-options #uv-s-universe { border-left: 1px solid #161C22; margin-left: 10px; padding-left: 10px; }
+
+#uv-spreading-btn { background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/spreading_but_small.gif) 0 -26px no-repeat; position: absolute; right: 189px; z-index: 101; top: 32px; width: 54px; height: 26px; cursor:pointer; }
+#uv-spreading-btn:hover { background-position: 0 0; }

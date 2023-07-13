@@ -1,0 +1,4 @@
+body { padding: 25px; }
+
+#button-enable { vertical-align: middle; }
+#button-cancel { display: inline-block; text-decoration: none; vertical-align: middle; margin-left: 10px; }

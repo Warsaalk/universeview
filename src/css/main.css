@@ -1,0 +1,64 @@
+/*** General styles ***/
+.uv-hide { display: none; }
+
+span.btn-del { cursor: pointer; background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/del_favourite.png) -13px 0 no-repeat; top: 4px; left: 4px; height: 13px; width: 13px; position: absolute; display: block; }
+span.btn-del:hover { background-position: 0 0; }
+
+.uv-btn-add{ background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/spreading_add.gif) -34px 0 no-repeat; width: 17px; height: 17px; display: block; position: absolute; top: 0; right: 0; cursor: pointer; }
+.uv-btn-add:hover{ background-position: -17px 0; }
+
+.uv-btn-fleet { background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/menu_icons.png) -52px -13px no-repeat; height: 13px; width: 13px; }
+.uv-btn-fleet:hover { background-position: -52px -26px; }
+
+body.uv-feature-spreading #commandercomponent #characterclass,
+body.uv-feature-quicksearch #commandercomponent #characterclass { margin-right: 62px; }
+
+/*** Uv Notification ***/
+#uv_tip{ background-color: #0D1015; padding:10px; position:fixed; top:29px; left:10px; z-index:100000; border: 1px solid #84cf1d;}
+#uv_tip_close{ background:url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/buttons-all.png) -207px -17px no-repeat; width:16px; height:16px; position:absolute; top:10px; right:10px; cursor:pointer; }
+#uv_tip_content{ background-color:#13181D; padding:10px; border:1px solid #030303; margin-top:10px; }
+#uv_tip_title{ padding-right:25px; }
+#uv_update_notification{ background:url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/buttons-blue.gif) 0 0 no-repeat; width:176px; height:27px; font-weight:bold; color:#FFF; margin-top:10px; cursor:pointer; }
+#uv_update_notification:hover{ color:#000; background-position: 0 -27px; }
+#uv_version_notification{ background:url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/buttons-all.png) 0 0 no-repeat; display: block; width:143px; height:54px; font-weight:bold; font-size:16px; text-align:center; color:#FFF; margin-top:10px; cursor:pointer; text-decoration: none; box-sizing: border-box; padding-top: 6px; }
+#uv_version_notification:hover{ background-position: 0 -54px; }
+
+/*** Galaxy ***/
+.uv_g_planet{ cursor: pointer; }
+
+/*** Uv Hello ***/
+#UvHello{ width: 780px; height: 480px; overflow-y: auto; margin: 0 auto; padding: 10px; color: #848484; }
+#UvHello h1{ font-size: 2em; font-weight: bold; padding: 10px 0; }
+#UvHello h2{ font-size: 1.5em; font-weight: bold; padding: 7px 0; }
+.clear{ clear: both; }
+.InfoContent{ background-color: #1e2c39; margin-top: 10px; padding: 5px 10px; }
+#UvHello img{ padding: 10px; }
+#UvHello p { margin: 10px 0; }
+#UvHello b { font-size: 1.1em; }
+#summaryUl{ margin: 0 0 10px 20px; list-style: disc; }
+
+/*** Uv Update ***/
+#uv_updatebox { position: relative;  top: 0; left: 0; height: 100%; width: 100%; z-index: 998; }
+#uv_shadow { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 999; }
+#uv_update { position: absolute;  width: 222px; left: 50%; top: 40%; margin-left: -111px; color: #fff; font-weight: bold; z-index: 1000; text-align: center; }
+#uv_update .header { background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/box-header.gif) no-repeat; height: 32px; font-size: 11px; }
+#uv_update .content { min-height: 46px; height: auto !important; height: 46px; position: relative; background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/box-middle.gif) repeat-y; padding: 7px 20px 10px; }
+#uv_update .footer { background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/box-footer.gif) no-repeat; height: 21px; margin-top: -8px; }
+
+/*** Notifications ***/
+#uv-notifications { list-style: none; position: absolute; right: 50%; margin-right: -500px; top: 80px; width: 0; height: 0; z-index: 999; }
+#uv-notifications li { width: 250px; padding: 20px; border: 1px solid #9c0; border-radius: 3px; margin-bottom: 10px; position: relative; left: 0; opacity: 0; transition: left 0.5s, opacity 0.5s; z-index: 200; box-shadow: 0px 4px 30px rgba(0,0,0,0.7);
+    background: #171d23;
+    background: -moz-linear-gradient(top,#171d23 0,#101419 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#171d23),color-stop(100%,#101419));
+    background: -webkit-linear-gradient(top,#171d23 0,#101419 100%);
+    background: -o-linear-gradient(top,#171d23 0,#101419 100%);
+    background: -ms-linear-gradient(top,#171d23 0,#101419 100%);
+    background: linear-gradient(top,#171d23 0,#101419 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#171d23',endColorstr='#101419',GradientType=0);
+}
+#uv-notifications li.show { left: -300px; opacity: 1; }
+#uv-notifications li .btn-del { right: 4px; left: auto; }
+
+/*** Override ogame ***/
+.uv-clearfix::after { content: ""; display: table; clear: both; }

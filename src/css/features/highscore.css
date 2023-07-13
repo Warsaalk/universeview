@@ -1,0 +1,5 @@
+.uv-highscore-vmode { opacity: 0.7; }
+.uv-highscore-player .playername { color: #eee; }
+.uv-highscore-inactive-short .playername { color: #848484; }
+.uv-highscore-inactive-long .playername { color: #6e6e6e!important; }
+.uv-highscore-vmode .playername { color: aqua!important; }

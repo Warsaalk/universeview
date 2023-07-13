@@ -1,0 +1,49 @@
+<div id="uv-s-wrapper" class="uv-element">
+	<div id="uv-s-header" class="clearfix">
+		<h2>${$__.spreading_title}</h2>
+		<div id="uv-s-add-wrapper"><div class="uv-btn-add"></div>${$__.spreading_yourself}</div>
+		<span class="btn-del">&nbsp;</span>
+	</div>
+	<div id="uv-spreading">
+		<div id="uv-s-info" class="clearfix">
+			<div id="uv-s-playerbox" class="uv-s-header-box">
+				<ul id="uv-s-playerlist"></ul>
+			</div>
+			<div id="uv-s-planetbox" class="uv-s-header-box">
+				<div id="uv-s-noplayer">${$__.spreading_noplayer}</div>
+				<ul id="uv-s-planetlist"></ul>
+			</div>
+			<div id="uv-s-config" class="uv-s-header-box">
+				<h2>${$__.spreading_profileconfig}</h2>
+				<div>
+					<div class="clearfix">
+						<span>${$__.spreading_current}:</span>
+						<select id="uv-s-profile">
+							<option disabled="disabled">&nbsp; - &nbsp;</option>
+						</select>
+					</div>
+					<input type="button" class="btn_blue" value="${$__.spreading_delete}" id="uv-s-btn-delprofile">
+				</div>
+				<div>
+					<input class="textInput" type="search" id="uv-s-newprofile">
+					<input type="button" class="btn_blue" value="${$__.spreading_new}" id="uv-s-btn-newprofile">
+				</div>
+			</div>
+		</div>
+		<ul id="uv-s-rows"></ul>
+		<div id="uv-s-options" class="clearfix">
+			<div class="uv-s-left" id="uv-s-position-tracker">
+				${$__.spreading_position}: <span id="uv-s-position-coordinates">?:?:?</span>
+			</div>
+			<div class="uv-s-right" id="uv-s-universe">
+				<input type="button" class="btn_blue" value="${$__.spreading_showuniverse}">
+			</div>
+			<div class="uv-s-right">
+				${$__.spreading_galaxycolor} :
+				<input id="uv-s-row-color" value="${$__.color}">
+				<input type="button" class="btn_blue" value="${$__.spreading_invert}" id="uv-s-invert">
+			</div>
+		</div>
+	</div>
+	<div id="uv-s-footer"></div>
+</div>

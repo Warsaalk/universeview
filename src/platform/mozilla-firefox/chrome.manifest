@@ -1,0 +1,4 @@
+content universeview chrome/content/
+content universeview chrome/content/ contentaccessible=yes
+
+resource universeview chrome/content/

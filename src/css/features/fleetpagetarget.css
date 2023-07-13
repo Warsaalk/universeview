@@ -1,0 +1,14 @@
+#uv-fleetpage-planets {  }
+#uv-fleetpage-planets ul { list-style: none; padding: 10px !important; margin: 0; float: none !important; }
+#uv-fleetpage-planets ul .uv-fleetpage-planet { display: inline-block; width: 33%; padding: 5px 2%; box-sizing: border-box; cursor: pointer; position: relative; word-wrap: break-word; }
+#uv-fleetpage-planets ul .uv-fleetpage-planet:hover { background-color: #364452; }
+#uv-fleetpage-planets .uv-fleetpage-coords { float: right; }
+
+#uv-fleetpage-planets .uv-fleetpage-links { position: absolute; right: 0; bottom: 1px; display: none; height: 23px; }
+#uv-fleetpage-planets .uv-fleetpage-link { height: 21px; width: 25px; display: inline-block; background-image: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/planet-targets.png); background-repeat: no-repeat; background-size: 75px auto; border: 1px solid transparent; }
+#uv-fleetpage-planets .uv-fleetpage-link:hover { border-color: #a26d00; }
+#uv-fleetpage-planets .uv-fleetpage-link-planet { background-position: 0 -20px; }
+#uv-fleetpage-planets .uv-fleetpage-link-moon { background-position: -25px 1px; }
+#uv-fleetpage-planets .uv-fleetpage-link-moon.exists { background-position: -25px -20px; }
+#uv-fleetpage-planets .uv-fleetpage-link-debris { background-position: -50px -20px; }
+#uv-fleetpage-planets ul .uv-fleetpage-planet:hover .uv-fleetpage-links { display: block; background-color: #364452; }

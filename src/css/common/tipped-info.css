@@ -1,0 +1,2 @@
+.uv-tipped-info { position: relative; }
+.uv-tipped-info::after { content: "?"; display: inline-block; font-size: 0.7em; vertical-align: super; padding-left: 5px; }

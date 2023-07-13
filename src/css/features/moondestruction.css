@@ -1,0 +1,13 @@
+/* Uv Moon Destruction */
+#uv_md { display: none; }
+#uv_md ul { display: table; border-spacing: 5px; }
+#uv_md li { display: table-row; height: 31px; line-height: 21px; }
+#uv_md div { display: table-cell; background: #1b2029; padding: 5px; width: 25%; }
+#uv_md div:first-child { width: 75%; }
+#uv_md #uv_md_co,
+#uv_md #uv_md_size,
+#uv_md #uv_md_moon,
+#uv_md #uv_md_rips { text-align: center; font-weight: bold; }
+#uv_md #uv_md_input { width: 50px; height: 15px; }
+#uv_md #uv_md_start { background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/buttons-all.png) 0 -187px no-repeat; height: 17px; width: 132px; line-height: 16px; text-align: center; color: #fff; font-weight: bold; cursor: pointer; }
+#uv_md #uv_md_start:hover { background-position: 0 -213px; }

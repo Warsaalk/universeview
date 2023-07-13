@@ -1,0 +1,38 @@
+/*.uv-skin-events #eventHeader { display: none; }*/
+.uv-skin-events #eventContent { padding-top: 5px; }
+.uv-skin-events tr[data-return-flight="true"] { opacity: 0.4; } /*Returning fleets */
+.uv-skin-events .eventFleet,
+.uv-skin-events .allianceAttack { color: #bbb; } /*default eventlist color */
+.uv-skin-events .eventFleet:hover,
+.uv-skin-events .allianceAttack:hover { background-color: #191F29 !important; } /*BG row hover */
+.uv-skin-events .eventFleet.odd { background-color: #0D1117 !important; }
+.uv-skin-events .eventFleet td { padding: 1px 0 !important; border-bottom: 1px solid #171C24; } /*Cell padding & border */
+.uv-skin-events .eventFleet .icon_movement,
+.uv-skin-events .eventFleet .icon_movement_reserve{ background-position: 0 3px; } /*Align icon */
+.uv-skin-events .coordsOrigin a,
+.uv-skin-events .destCoords a { color: #79a1ba !important; } /*Default coords color */
+.uv-skin-events tr[data-mission-type="3"] .destCoords a,
+.uv-skin-events tr[data-mission-type="3"] .countDown { color: #9be835 !important; } /*Transport */
+.uv-skin-events tr[data-mission-type="4"] .destCoords a,
+.uv-skin-events tr[data-mission-type="4"] .countDown { color: #50d6a4 !important; } /*Deploy */
+.uv-skin-events tr[data-mission-type="15"] .destCoords a,
+.uv-skin-events tr[data-mission-type="15"] .countDown { color: #5daed9 !important; } /*Expo */
+.uv-skin-events tr[data-mission-type="7"] .destCoords a,
+.uv-skin-events tr[data-mission-type="7"] .countDown { color: #5dd3d9 !important; } /*Colo */
+.uv-skin-events tr[data-mission-type="8"] .destCoords a,
+.uv-skin-events tr[data-mission-type="8"] .countDown { color: #6cde50 !important; } /*Recycle */
+.uv-skin-events tr[data-mission-type="5"] .destCoords a,
+.uv-skin-events tr[data-mission-type="5"] .countDown { color: #d6943e !important; } /*AGS def */
+.uv-skin-events tr[data-mission-type="6"] .destCoords a,
+.uv-skin-events tr[data-mission-type="6"] .countDown { color: #e6e22e !important; } /*Spio */
+.uv-skin-events tr[data-mission-type="1"] .destCoords a,
+.uv-skin-events tr[data-mission-type="1"] .countDown,
+.uv-skin-events tr[data-mission-type="2"] .destCoords a,
+.uv-skin-events tr[data-mission-type="2"] .countDown { color: #d63e3e !important; } /*Attack, AGS */
+.uv-skin-events tr[data-mission-type="9"] .destCoords a,
+.uv-skin-events tr[data-mission-type="9"] .countDown { color: #fe3f5e !important; } /* MD */
+
+.uv-skin-events tr[data-mission-type] .countDown.hostile { color: #ffffff !important; }
+.uv-skin-events tr[data-mission-type="1"] .countDown.hostile,
+.uv-skin-events tr[data-mission-type="2"] .countDown.hostile { background: #d63e3e; }
+.uv-skin-events tr[data-mission-type="9"] .countDown.hostile { background: #fe3f5e; }

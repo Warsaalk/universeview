@@ -1,0 +1,95 @@
+{
+	"name": "UniverseView Extension",
+	"short_name": "UniverseView",
+	"version": "%version%",
+	"version_name": "%version_name%",
+	"description": "UniverseView is a fast and fun OGame add-on. Find planets everywhere and make the way you play OGame more efficient and effective!",
+	"homepage_url": "https://universeview.be",
+	"manifest_version": 2,
+	"content_scripts": [
+		{
+			"js": ["chrome/content/scripts/universeview.js"],
+			"css": ["chrome/content/css/stylesheet.css", "chrome/content/css/skin.css"],
+			"matches": ["*://*.ogame.gameforge.com/game/index.php*"],
+			"run_at": "document_start"
+		}
+	],
+	"permissions": [
+		"storage",
+		"*://*.ogame.gameforge.com/game/index.php*",
+		"*://*universeview.be/*",
+		"management",
+		"notifications",
+		"alarms",
+		"tabs"
+	],
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"icons": { 
+		"16": "logo-16.png",
+        "48": "logo-48.png",
+        "128": "logo-128.png" 
+	},
+	"applications": {
+  		"gecko": {
+    		"id": "firefox@universeview.ext",
+    		"strict_min_version": "54.0"
+    	}
+    },
+	"browser_action": {
+		"browser_style": true,
+		"default_icon": "logo-48.png",
+		"default_title": "UniverseView",
+		"default_popup": "chrome/popup/index.html"
+	},
+	"web_accessible_resources" : [
+		"chrome/content/scripts/universeview.js",
+		"chrome/content/img/action-buttons.png",
+		"chrome/content/img/del_favourite.png",
+		"chrome/content/img/fav.png",
+		"chrome/content/img/feature-buttons-small.png",
+		"chrome/content/img/feature_but.png",
+		"chrome/content/img/loader.gif",
+		"chrome/content/img/loading.gif",
+		"chrome/content/img/menu_header.png",
+		"chrome/content/img/menu_icons.png",
+		"chrome/content/img/officers.png",
+		"chrome/content/img/planet-targets.png",
+		"chrome/content/img/quicksearch.gif",
+		"chrome/content/img/shield.png",
+		"chrome/content/img/spreading_add.gif",
+		"chrome/content/img/spreading_but_small.gif",
+		"chrome/content/img/spreading-footer.gif",
+		"chrome/content/img/spreading-middle.gif",
+		"chrome/content/img/sword.png",
+		"chrome/content/img/donate.png",
+		"chrome/content/img/uv_icon.png",
+		"chrome/content/img/missions.jpg",
+		"chrome/content/img/dn-default.png",
+		"chrome/content/img/dn-type-1.png",
+		"chrome/content/img/dn-type-1-h.png",
+		"chrome/content/img/dn-type-2.png",
+		"chrome/content/img/dn-type-2-h.png",
+		"chrome/content/img/dn-type-3.png",
+		"chrome/content/img/dn-type-4.png",
+		"chrome/content/img/dn-type-5.png",
+		"chrome/content/img/dn-type-6.png",
+		"chrome/content/img/dn-type-6-h.png",
+		"chrome/content/img/dn-type-7.png",
+		"chrome/content/img/dn-type-8.png",
+		"chrome/content/img/dn-type-9.png",
+		"chrome/content/img/dn-type-9-h.png",
+		"chrome/content/img/dn-type-15.png",
+		"chrome/content/img/box-footer.gif",
+		"chrome/content/img/box-middle.gif",
+		"chrome/content/img/box-header.gif",
+		"chrome/content/img/buttons-blue.gif",
+		"chrome/content/img/buttons-all.png",
+		"chrome/content/templates/*.html",
+		"chrome/content/css/*.css",
+		"chrome/popup/*.html",
+		"chrome/popup/*.css",
+		"chrome/popup/script.js"
+	]
+}

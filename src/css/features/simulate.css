@@ -1,0 +1,7 @@
+.uv-simulate-trashsim { display: inline-block; height: 26px; padding-left: 26px; background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/action-buttons.png) no-repeat top left; background-position: 0 -52px; }
+.uv-simulate-trashsim:hover { background-position: 0 -78px; border-color: #e7ae46; border-radius: 3px; }
+.uv-simulate-trashsim > div { display: none; height: 22px; width: 22px; margin: 2px 0 0 5px; cursor: pointer; background-size: 22px; opacity: 0.4; }
+.uv-simulate-trashsim:hover > div { display: inline-block; }
+.uv-simulate-trashsim > div:hover { opacity: 1.0; }
+.uv-simulate-trashsim div:first-child { background-image: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/sword.png); }
+.uv-simulate-trashsim div:last-child { background-image: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/shield.png); }

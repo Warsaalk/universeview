@@ -1,0 +1,21 @@
+
+.uv-idletimer-timer { display: inline-block; padding: 1px; background: #000; color: #ffa800; border: 1px solid #ffa800; border-radius: 3px; font-size: 0.6rem; position: absolute; z-index: 100; opacity: 0.6; }
+.uv-idletimer-timer::before { content: attr(data-idletimer-time); display: inline; }
+.uv-idletimer-timer.expired { display: none; }
+
+.planetlink .uv-idletimer-timer { top: 3px; right: 90%; }
+.moonlink .uv-idletimer-timer { bottom: 3px; right: 75%; border-color: rgba(255, 168, 0, 0.75); }
+
+/*.ago_improve .smallplanet.smaller .moonlink .uv-idletimer-timer,
+.agr .smallplanet.smaller .moonlink .uv-idletimer-timer,
+.ago .smallplanet.smaller .moonlink .uv-idletimer-timer { bottom: -5px; right: 0; }*/
+
+.active .uv-idletimer-timer { border-color: #9c0; color: #9c0; }
+
+#myWorlds > div:hover .uv-idletimer-timer,
+#planetList > div:hover .uv-idletimer-timer { opacity: 1; }
+
+.uv-idletimer-toggle { opacity: 0.25; margin-top: 25px; display: flex; flex-flow: row wrap; cursor: pointer; }
+.uv-idletimer-toggle:hover { opacity: 1; }
+.uv-idletimer-toggle span { display: inline-block; flex: 1; }
+.uv-idletimer-toggle .feature-option-state-btn { margin-right: 10px; }

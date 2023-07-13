@@ -1,0 +1,2 @@
+#planetList .smallplanet .ago_planets_cooldown { top: 10px !important; }
+#planetList .smallplanet.smaller .ago_planets_cooldown { top: 0px !important; }

@@ -1,0 +1,93 @@
+/*** Uv Menu CSS ***/
+#uv-menu-wrapper { position: fixed; top: 0; left: 0; bottom: 0; right: 0; overflow: auto; background: rgba(0, 0, 0, 0.75); padding: 25px; z-index: 999; }
+#uv-menu-background { position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: 1; }
+#uv-menu-close { position: absolute; top: 0; right: -45px; background: transparent url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/buttons-all.png) -175px 0px no-repeat; width: 32px; height: 32px; cursor: pointer; }
+#uv-menu-close:hover { background-position-y: -32px; }
+
+#UvContent { width: 640px; background-color: #0d1015; border: 1px solid #000; padding: 10px; color: #DDD; margin: 25px auto 50px; position: relative; z-index: 2; }
+#UvContent h1{ font-size: 2em; font-weight: bold; color: #fff; background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/menu_header.png); height: 37px; width: 512px; padding-left: 150px; padding-top: 3px; margin-top: -10px; margin-left: -11px; }
+#UvContent h2{ font-weight: bold; font-size: 1.5em; padding: 20px 0 5px 0; color: #6F9FC8; }
+#UvContent h3{ font-size: 0.9em; font-weight: bold; }
+#UvGeneral{ padding: 10px; }
+.UvUpdateOption{ display: none; margin-top: 5px; }
+li.selected .UvUpdateOption{ display: block; }
+.UvUpdateOption > div{ padding: 3px; }
+#UvContent ul { list-style: none; }
+.UvClear{ clear: both;	 }
+.UvUpdateGalaxy{ background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/buttons-blue.gif) no-repeat; width: 176px; height: 27px; font-weight: bold; color: #FFF; cursor: pointer; }
+.UvUpdateGalaxy:hover{ background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/buttons-blue.gif) 0px -27px no-repeat; color: #000; }
+.UpdatingGalaxy{ background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/buttons-blue.gif) no-repeat !important; color: #999 !important; }
+#UvSetAccessServer,
+#UvSetUpdateServer{ background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/buttons-blue.gif) no-repeat; width: 176px; height: 27px; font-weight: bold; color: #FFF; margin-left: 5px; cursor: pointer; }
+#UvSetAccessServer:hover,
+#UvSetUpdateServer:hover{ background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/buttons-blue.gif) 0px -27px no-repeat; width: 176px; height: 27px; color: #000; }
+#UVvVersion img{ margin: -5px 0 0 10px; }
+.UvAction{ height: 25px; border-radius: 3px; line-height: 25px; }
+.UvAction:hover{ background-color: #3c4854; }
+.UvUpdateButtons{ float: right; margin: -1px; }
+.UvFeatureButton{ background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/feature_but.png) 0 -25px no-repeat; width: 75px; height: 25px; float: right; margin: -2px; cursor: pointer; }
+.active .UvFeatureButton{ background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/feature_but.png) 0 0 no-repeat; }
+.uv-feature-extra { display: none; background: rgb(33, 42, 51); position: relative; margin-top: 20px; padding: 10px; border-radius: 3px; }
+.uv-feature-extra::before { content: ""; display: block; position: absolute; top: -10px; right: 27.5px; border-bottom: 10px solid rgb(33, 42, 51); border-left: 10px solid transparent; border-right: 10px solid transparent; }
+.active .uv-feature-extra { display: block; }
+.uv-feature-extra-info { border-bottom: 1px solid rgb(13, 16, 21); padding-bottom: 10px; margin-bottom: 10px; }
+#UvExtraMenu,
+#UvFeatureMenu { list-style: square; }
+#UvExtraMenu > li,
+#UvFeatureMenu .uv-feature-category > li{ border-radius: 3px; padding: 6px; min-height: 21px; line-height: 21px; }
+#UvExtraMenu > li:hover,
+#UvFeatureMenu .uv-feature-category > li:hover{ background-color: rgb(60, 72, 84); }
+#UvFeatureMenu > li { background: rgba(33, 42, 51, 0.5); border-radius: 3px; margin-top: 15px; padding: 4px; }
+#UvFeatureMenu h3 { padding: 6px; font-size: 1.25em; color: rgb(111, 159, 200); }
+.UvExtraButton{ background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/buttons-blue.gif) no-repeat; width: 176px; height: 27px; float: right; margin: -2px; cursor: pointer; color: #FFF; font-weight: bold; }
+.UvExtraButton:hover{ background-position: 0px -27px;	 color: #000; }
+.UvExtraButton:disabled{ background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/buttons-blue.gif) no-repeat !important; color: #999 !important; }
+#UvHelpButtons{ margin:	20px 0 0 0; display: flex; flex-flow: row wrap; align-items: center; justify-content: center; }
+#UvHelpButtons > div { width: 30%; }
+.UvHelpButton{ background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/buttons-blue.gif) no-repeat; width: 176px; height: 27px; cursor: pointer; color: #FFF; font-weight: bold; margin: 4px; }
+.UvHelpButton:hover{ background-position: 0px -27px; color: #000; }
+#paypal{ width: 176px; margin: 4px; text-align: center; }
+#UvContent .c-left { top: auto; bottom: -4px; left: -9px; }
+#UvContent .c-right { top: auto; bottom: -4px; left: 641px; }
+
+/* Donate */
+.uv-menu-donate { display: flex; flex-flow: row wrap; align-items: flex-start; }
+.uv-menu-donate > div { display: flex; flex-flow: row wrap; align-items: flex-start; }
+.donate-cr { margin-right: 50px; }
+.donate-cr.active { width: 100%; margin-right: 0; }
+.donate-cr .donate-cr-icon { display: block; width: 60px; height: 60px; cursor: pointer; background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/donate.png) no-repeat; background-size: 100%; }
+.donate-cr .donate-cr-table { display: none; }
+.donate-cr.active .donate-cr-table { display: grid; grid-template-columns: 1fr 2fr; gap: 5px; margin: 15px 0; }
+.donate-cr.active .donate-cr-table > div { padding: 5px 10px; background: rgba(33, 42, 51, 0.5); }
+.donate-cr.active .donate-cr-table > div:nth-child(-n + 2) { font-weight: bold; }
+
+
+/* Feature options */
+.feature-option-state-btn { display: inline-block; height: 25px; width: 25px; cursor: pointer; background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/feature-buttons-small.png) no-repeat; background-position: center bottom; }
+.feature-option-state-btn.active { background-position: center top; }
+.feature-option-number { max-width: 40px; border-radius: 3px; border: 0; text-align: center; padding: 3px 0; background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.75); }
+
+.feature-option-list {  }
+.feature-option-list li { display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between; padding: 0; }
+.feature-option-list li + li { margin-top: 5px; }
+.feature-option-label { }
+.feature-option-widget {  }
+
+.feature-option-table { width: 100%; border-collapse: separate; border-spacing: 3px; margin-top: 10px; }
+.feature-option-table th { vertical-align: top; text-align: center; }
+.feature-option-table th span  { font-size: 0.5rem; line-height: 1; }
+.feature-option-table tbody td { vertical-align: middle; text-align: center; }
+.feature-option-table tbody td:first-child { text-align: left; }
+
+/* Event notification feature */
+.en-icon-mission { background: url(chrome-extension://__MSG_@@extension_id__/chrome/content/img/missions.jpg) no-repeat; width: 40px; height: 40px; background-size: 440px auto; border-radius: 7px; display: inline-block; }
+.en-icon-mission-1 { background-position: -320px 0; }
+.en-icon-mission-2 { background-position: -400px 0; }
+.en-icon-mission-3 { background-position: -200px 0; }
+.en-icon-mission-4 { background-position: -120px 0; }
+.en-icon-mission-5 { background-position: -280px 0; }
+.en-icon-mission-6 { background-position: -240px 0; }
+.en-icon-mission-7 { background-position: -80px 0; }
+.en-icon-mission-8 { background-position: -160px 0; }
+.en-icon-mission-9 { background-position: -360px 0; }
+.en-icon-mission-15 { background-position: 0 0; }
